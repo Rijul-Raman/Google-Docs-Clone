@@ -156,6 +156,7 @@
   height: 75%;
 }
 
+/* Enhanced Search Bar Styles */
 .Searchbar {
   height: 40px;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
@@ -165,17 +166,39 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  transition: box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.Searchbar:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
 .Searchbar > img {
   height: 50%;
+  opacity: 0.6;
 }
 
 .Searchbar > input {
   border: none;
   height: 30px;
-  width: 500px;
+  width: 100%;
   font-size: 16px;
+  color: #333;
+  background: transparent;
+}
+
+.Searchbar > input:focus {
+  outline: none;
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  color: #5f6368;
+  font-size: 1.1rem;
 }
 
 *:focus {
