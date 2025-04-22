@@ -2,7 +2,7 @@ import "./App.css"
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import { TextEditor } from "./components/TextEditor"
 import { LandingPage } from "./components/LandingPage"
-import { SignIn, SignUp, SignedIn, SignedOut, useAuth } from "@clerk/clerk-react"
+import { SignIn, SignInButton, SignUp, SignedIn, SignedOut, useAuth } from "@clerk/clerk-react"
 
 // Protected route component to ensure authentication
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
@@ -33,7 +33,7 @@ function App() {
                 <div className="auth-container">
                   <h1>Google Docs Clone</h1>
                   <div className="auth-box">
-                    <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
+                    <SignInButton/>
                   </div>
                 </div>
               </SignedOut>
