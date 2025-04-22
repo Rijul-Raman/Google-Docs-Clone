@@ -181,3 +181,98 @@
 *:focus {
   outline: none;
 }
+
+/* Auth Styles */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.auth-container h1 {
+  margin-bottom: 2rem;
+  color: #1a73e8;
+  font-size: 2.5rem;
+}
+
+.auth-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #1a73e8;
+}
+
+/* Mock Auth Styles */
+.mock-auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.mock-auth h2 {
+  margin-bottom: 1.5rem;
+  color: #1a73e8;
+  font-size: 1.8rem;
+}
+
+.auth-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.auth-button:hover {
+  background-color: #0d62c9;
+}
+
+.mock-auth p {
+  color: #5f6368;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* User Section Styles */
+.user-section {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.user-button {
+  background-color: transparent;
+  color: #5f6368;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-button:hover {
+  background-color: #f1f3f4;
+}

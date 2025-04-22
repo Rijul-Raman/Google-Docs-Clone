@@ -1,3 +1,4 @@
+import { SignedOut, SignedIn, SignInButton, UserButton } from "@clerk/clerk-react";
 import Img1 from "../assets/Google-Docs-logo.png" ;
 import Img2 from "../assets/SearchIcon.jpeg" ;
 
@@ -11,6 +12,14 @@ export const Topbar = () => {
             <div className="Searchbar">
                 <img src={Img2} alt="" />
                 <input type="text" placeholder="Search"/>   
+            </div>
+            <div className="user-section">
+                <SignedIn>
+                    <UserButton afterSignOutUrl="/"/>
+                </SignedIn>
+                <SignedOut>
+                    <SignInButton/>
+                </SignedOut>
             </div>
         </nav>
     )
